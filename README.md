@@ -1,4 +1,4 @@
-# threshold-clustering
+# thresholdclustering
 
 ## Threshold Spectral Community Detection for NetworkX
 
