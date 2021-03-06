@@ -59,7 +59,7 @@ nx.draw_networkx_edges(G, pos, alpha=0.2,width=weights)
 plt.show()
 ```
 
-![Best Partition](https://raw.githubusercontent.com/IngoMarquart/python-threshold-clustering/main/nw2.png)
+![Best Partition](https://raw.githubusercontent.com/IngoMarquart/python-threshold-clustering/main/nw4.png)
 
 We get three rather large partition and no sense of outliers.
 
