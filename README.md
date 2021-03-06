@@ -91,6 +91,12 @@ We can see that more communities of similarity can be identified. Note in partic
 
 ## Installation
 
+Install via pip
+
+
+```
+pip install thresholdclustering==1.1
+```
 
 
 `(*) Guzzi, Pietro Hiram, Pierangelo Veltri, and Mario Cannataro. "Thresholding of semantic similarity networks using a spectral graph-based technique." 
