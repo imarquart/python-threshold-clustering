@@ -83,7 +83,7 @@ plt.show()
 ```
 
 
-![Best Partition with threshold-clustering](https://raw.githubusercontent.com/IngoMarquart/python-threshold-clustering/main/nw2.png)
+![Best Partition with threshold-clustering](https://raw.githubusercontent.com/IngoMarquart/python-threshold-clustering/main/nw3.png)
 
 
 We can see that more communities of similarity can be identified. Note in particular outliers drawn in yellow.
