@@ -88,6 +88,11 @@ plt.show()
 
 We can see that more communities of similarity can be identified. Note in particular outliers drawn in yellow.
 
+
+## Installation
+
+
+
 `(*) Guzzi, Pietro Hiram, Pierangelo Veltri, and Mario Cannataro. "Thresholding of semantic similarity networks using a spectral graph-based technique." 
 International Workshop on New Frontiers in Mining Complex Patterns. Springer, Cham, 2013.`
 
