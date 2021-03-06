@@ -22,8 +22,11 @@ can be applied.
 
 Consider the cosine similarities in the Karate Club Network. Although these similarities are not directed, they are rather dense.
 
-```
+```python
 import networkx as nx
+import numpy as np
+import matplotlib.cm as cm
+import matplotlib.pyplot as plt
 from sklearn.metrics.pairwise import cosine_similarity
 
 # load graph
@@ -41,9 +44,12 @@ nx.draw_networkx_edges(G, pos, alpha=0.2, width=weights)
 plt.show()
 ```
 
+
+![Similarity Network](https://raw.githubusercontent.com/IngoMarquart/python-threshold-clustering/main/nw1.png)
+
 Let's use python-louvain to find the best partition.
 
-```
+```python
 partition=community_louvain.best_partition(G.to_undirected())
 
 cmap = cm.get_cmap('viridis', max(partition.values()) + 1)
@@ -53,13 +59,15 @@ nx.draw_networkx_edges(G, pos, alpha=0.2,width=weights)
 plt.show()
 ```
 
+![Best Partition](https://raw.githubusercontent.com/IngoMarquart/python-threshold-clustering/main/nw2.png)
+
 We get three rather large partition and no sense of outliers.
 
 Instead, we can use threshold-clustering's best_partition function to run python_louvain's community detection on a
 transformed network. 
 
 
-```
+```python
 from thresholdclustering import best_partition
 
 cluster_function = community_louvain.best_partition
@@ -73,6 +81,10 @@ nx.draw_networkx_nodes(G, pos, partition.keys(), node_size=40,
 nx.draw_networkx_edges(G, pos, alpha=0.2,width=weights)
 plt.show()
 ```
+
+
+![Best Partition with threshold-clustering](https://raw.githubusercontent.com/IngoMarquart/python-threshold-clustering/main/nw2.png)
+
 
 We can see that more communities of similarity can be identified. Note in particular outliers drawn in yellow.
 
