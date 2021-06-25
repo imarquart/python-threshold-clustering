@@ -1,0 +1,30 @@
+package:
+  name: "thresholdclustering"
+  version: "1.1"
+
+source:
+  git_rev: v1.1
+  git_url: https://github.com/GiulioRossetti/python-threshold-clustering
+
+requirements:
+  host:
+    - python
+    - setuptools
+  build:
+    - python
+    - setuptools
+  run:
+    - python>=3.7
+    - networkx>=2.4
+    - numpy
+
+about:
+  home: https://github.com/GiulioRossetti/python-threshold-clustering
+  license: BSD-2-Clause
+  license_familY: BSD
+  license_file: LICENSE
+  summary: "NetworkX Community detection based on the algorithm proposed in Guzzi et. al. 2013"
+
+extra:
+  recipe-maintainers:
+    - GiulioRossetti
