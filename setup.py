@@ -27,7 +27,8 @@ setup_args = dict(
 
 install_requires = [
     'numpy',
-    'networkx>=2.4'
+    'networkx>=2.4',
+    'python-louvain'
 ]
 
 if __name__ == '__main__':

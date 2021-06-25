@@ -17,6 +17,7 @@ requirements:
     - python>=3.7
     - networkx>=2.4
     - numpy
+    - python-louvain
 
 about:
   home: https://github.com/GiulioRossetti/python-threshold-clustering
