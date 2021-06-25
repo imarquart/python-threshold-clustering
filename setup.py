@@ -29,7 +29,7 @@ install_requires = [
     'numpy',
     'networkx>=2.4',
     'python-louvain',
-    'sklearn'
+    'scikit-learn'
 ]
 
 if __name__ == '__main__':
