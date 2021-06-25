@@ -7,3 +7,4 @@ dependencies:
 - networkx>=2.4
 - python-louvain
 - numpy
+- sklearn
