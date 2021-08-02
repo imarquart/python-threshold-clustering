@@ -98,6 +98,13 @@ Install via pip
 pip install thresholdclustering==1.1
 ```
 
+**New: Install via conda**
+
+```
+conda install -c giuliorossetti thresholdclustering 
+```
+
+_Thanks @GiulioRossetti_
 
 `(*) Guzzi, Pietro Hiram, Pierangelo Veltri, and Mario Cannataro. "Thresholding of semantic similarity networks using a spectral graph-based technique." 
 International Workshop on New Frontiers in Mining Complex Patterns. Springer, Cham, 2013.`
