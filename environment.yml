@@ -1,0 +1,10 @@
+name: threshold_clustering
+channels:
+- conda-forge
+- defaults
+dependencies:
+- python>=3.7
+- networkx>=2.4
+- python-louvain
+- numpy
+- scikit-learn

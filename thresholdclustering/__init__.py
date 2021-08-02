@@ -1,5 +1,2 @@
-from . import thresholdclustering
+from .thresholdclustering import *
 
-__all__ = [
-    'thresholdclustering',
-]

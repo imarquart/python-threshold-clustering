@@ -1,14 +1,18 @@
 from setuptools import setup, find_packages
+from codecs import open
+from os import path
 
-with open('README.md') as readme_file:
+here = path.abspath(path.dirname(__file__))
+
+with open(path.join(here,'README.md')) as readme_file:
     README = readme_file.read()
 
-with open('HISTORY.md') as history_file:
+with open(path.join(here,'HISTORY.md')) as history_file:
     HISTORY = history_file.read()
 
 setup_args = dict(
     name='thresholdclustering',
-    version='1.01',
+    version='1.1',
     description='Community detection for directed, weighted networkX graphs with spectral thresholding.',
     long_description_content_type="text/markdown",
     long_description=README + '\n\n' + HISTORY,
@@ -23,7 +27,9 @@ setup_args = dict(
 
 install_requires = [
     'numpy',
-    'networkx'
+    'networkx>=2.4',
+    'python-louvain',
+    'scikit-learn'
 ]
 
 if __name__ == '__main__':
